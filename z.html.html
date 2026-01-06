@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Staminer - पुरुष शक्ति और स्वस्थ जीवन के लिए विश्वसनीय आयुर्वेदिक समाधान। 100% प्राकृतिक, कोई साइड इफेक्ट नहीं, GMP प्रमाणित।">
+    <title>Staminer - पुरुष शक्ति और स्वस्थ जीवन के लिए आयुर्वेदिक समाधान</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<STYLE>
+    /* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-green: #2e7d32;
+    --dark-green: #1b5e20;
+    --light-green: #4caf50;
+    --beige: #f5f5dc;
+    --brown: #8d6e63;
+    --light-brown: #d7ccc8;
+    --white: #ffffff;
+    --off-white: #f9f9f9;
+    --gray: #757575;
+    --dark-gray: #424242;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Hind', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--off-white);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--dark-green);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--primary-green);
+    color: white;
+    box-shadow: 0 4px 12px rgba(46, 125, 50, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-green);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(46, 125, 50, 0.4);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--primary-green);
+    border: 2px solid var(--primary-green);
+}
+
+.btn-secondary:hover {
+    background-color: var(--primary-green);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.btn-product {
+    background-color: var(--brown);
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.btn-product:hover {
+    background-color: #795548;
+    transform: translateY(-3px);
+}
+
+.section-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+    color: var(--dark-green);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* Header Styles */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.header.scrolled {
+    background-color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-green);
+}
+
+.logo-icon {
+    position: relative;
+    margin-right: 10px;
+}
+
+.logo-icon i:first-child {
+    color: var(--primary-green);
+    font-size: 2rem;
+}
+
+.logo-icon i:last-child {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    color: var(--beige);
+    font-size: 1.2rem;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 30px;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--dark-gray);
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-link:hover {
+    color: var(--primary-green);
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-green);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--dark-green);
+    transition: all 0.3s ease;
+}
+
+/* Hero Section */
+.hero {
+    padding: 150px 0 80px;
+    background: linear-gradient(to right, var(--off-white) 60%, var(--light-brown) 40%);
+    overflow: hidden;
+}
+
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--dark-green);
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-placeholder {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, var(--primary-green), var(--dark-green));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 8rem;
+    animation: float 6s ease-in-out infinite;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* Education Section */
+.education {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.education-card {
+    background-color: var(--off-white);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid var(--primary-green);
+}
+
+.education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.education-icon {
+    font-size: 2.5rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.education-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--dark-green);
+}
+
+.education-card ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.education-card ul li:before {
+    content: "•";
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+
+/* Products Section */
+.products {
+    padding: 80px 0;
+    background-color: var(--beige);
+}
+
+.trust-badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px 25px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.badge i {
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-right: 10px;
+}
+
+.badge span {
+    font-weight: 600;
+    color: var(--dark-green);
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+    height: 200px;
+    background: linear-gradient(to right, var(--light-green), var(--primary-green));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 5rem;
+}
+
+.product-card h3 {
+    padding: 20px 20px 10px;
+    font-size: 1.5rem;
+    color: var(--dark-green);
+}
+
+.product-benefits {
+    padding: 0 20px 20px;
+    flex-grow: 1;
+}
+
+.product-benefits p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.product-benefits i {
+    color: var(--primary-green);
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+.product-card .btn {
+    margin: 0 20px 20px;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0;
+    background-color: white;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background-color: var(--off-white);
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--primary-green);
+    font-size: 1.8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--dark-green);
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background-color: var(--beige);
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--dark-gray);
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Hind', sans-serif;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--primary-green);
+    outline: none;
+}
+
+.contact-form .btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+.success-message {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    background-color: #e8f5e9;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.success-message i {
+    font-size: 4rem;
+    color: var(--primary-green);
+    margin-bottom: 20px;
+}
+
+.success-message h3 {
+    margin-bottom: 15px;
+    color: var(--dark-green);
+}
+
+.success-message p {
+    margin-bottom: 20px;
+    color: var(--gray);
+}
+
+.contact-info h3 {
+    margin-bottom: 30px;
+    color: var(--dark-green);
+    font-size: 1.8rem;
+}
+
+.contact-method {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    color: var(--primary-green);
+    font-size: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.contact-details h4 {
+    margin-bottom: 5px;
+    color: var(--dark-green);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark-green);
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-about .logo {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links h3,
+.footer-disclaimer h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-disclaimer p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
+}
+
+/* WhatsApp Float Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    box-shadow: 0 5px 20px rgba(37, 211, 102, 0.5);
+    z-index: 100;
+    transition: all 0.3s ease;
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.7);
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+    70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.slide-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-content {
+        margin-bottom: 50px;
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-buttons {
+        justify-content: center;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        padding: 20px 0;
+        z-index: 999;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-item {
+        margin: 15px 0;
+    }
+    
+    .hero {
+        padding: 120px 0 60px;
+        background: var(--off-white);
+    }
+    
+    .image-placeholder {
+        width: 250px;
+        height: 250px;
+        font-size: 6rem;
+    }
+    
+    .trust-badges {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-form {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+    }
+    
+    .section-title {
+        font-size: 1.6rem;
+    }
+    
+    .education-card, .feature-card {
+        padding: 20px;
+    }
+    
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+</STYLE></head>
+<body>
+    <!-- Header Section -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-leaf"></i>
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span class="logo-text">Staminer</span>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link">होम</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">उत्पाद</a></li>
+                    <li class="nav-item"><a href="#benefits" class="nav-link">लाभ</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">हमारे बारे में</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">संपर्क करें</a></li>
+                </ul>
+                
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">पुरुष शक्ति और स्वस्थ जीवन के लिए विश्वसनीय आयुर्वेदिक समाधान</h1>
+                <p class="hero-description">प्राचीन आयुर्वेदिक ज्ञान और आधुनिक विज्ञान का संगम, जो आपके जीवन में नई ऊर्जा और स्फूर्ति लाता है।</p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-primary">अभी ऑर्डर करें</a>
+                    <a href="https://wa.me/919718587814?text=Hello%2C%20mujhe%20Staminer%20product%20ke%20baare%20me%20jankari%20chahiye" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-whatsapp"></i> व्हाट्सएप्प पर बात करें
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-seedling"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Content Section -->
+    <section class="education" id="benefits">
+        <div class="container">
+            <h2 class="section-title">स्वस्थ जीवनशैली का महत्व</h2>
+            <p class="section-subtitle">शारीरिक और मानसिक स्वास्थ्य के लिए संतुलित जीवनशैली आवश्यक है</p>
+            
+            <div class="education-grid">
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>स्वस्थ यौन जीवन के फायदे</h3>
+                    <ul>
+                        <li>तनाव कम करता है और मानसिक शांति प्रदान करता है</li>
+                        <li>रिश्तों में मजबूती और विश्वास बढ़ाता है</li>
+                        <li>आत्मविश्वास और आत्मसम्मान में वृद्धि करता है</li>
+                        <li>समग्र शारीरिक स्वास्थ्य में सुधार करता है</li>
+                        <li>हार्मोन संतुलन बनाए रखने में सहायक है</li>
+                    </ul>
+                </div>
+                
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>स्वस्थ यौन जीवन न होने से होने वाली समस्याएं</h3>
+                    <ul>
+                        <li>तनाव और चिंता का स्तर बढ़ सकता है</li>
+                        <li>आत्मविश्वास में कमी आ सकती है</li>
+                        <li>रिश्तों में तनाव और दूरी आ सकती है</li>
+                        <li>मानसिक स्वास्थ्य पर प्रतिकूल प्रभाव</li>
+                        <li>समग्र जीवन संतुष्टि में कमी</li>
+                    </ul>
+                </div>
+                
+                <div class="education-card fade-in">
+                    <div class="education-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>आयुर्वेदिक जीवनशैली की भूमिका</h3>
+                    <ul>
+                        <li>प्राकृतिक जड़ी-बूटियों से शरीर को पोषण</li>
+                        <li>दोष संतुलन (वात, पित्त, कफ) द्वारा समग्र स्वास्थ्य सुधार</li>
+                        <li>शारीरिक और मानसिक ऊर्जा में वृद्धि</li>
+                        <li>कोई हानिकारक दुष्प्रभाव नहीं</li>
+                        <li>दीर्घकालिक स्वास्थ्य लाभ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">हमारे आयुर्वेदिक उत्पाद</h2>
+            <p class="section-subtitle">100% प्राकृतिक, GMP प्रमाणित और कोई दुष्प्रभाव नहीं</p>
+            
+            <div class="trust-badges">
+                <div class="badge">
+                    <i class="fas fa-check-circle"></i>
+                    <span>100% आयुर्वेदिक</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>कोई दुष्प्रभाव नहीं*</span>
+                </div>
+                <div class="badge">
+                    <i class="fas fa-certificate"></i>
+                    <span>GMP प्रमाणित</span>
+                </div>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card slide-up">
+                    <div class="product-image">
+                        <i class="fas fa-capsules"></i>
+                    </div>
+                    <h3>Staminer Capsule</h3>
+                    <div class="product-benefits">
+                        <p><i class="fas fa-check"></i> शारीरिक शक्ति और स्टेमिना बढ़ाता है</p>
+                        <p><i class="fas fa-check"></i> हार्मोन संतुलन में सहायक</p>
+                        <p><i class="fas fa-check"></i> प्रतिरक्षा प्रणाली मजबूत करता है</p>
+                        <p><i class="fas fa-check"></i> शुक्राणुओं की गुणवत्ता में सुधार</p>
+                    </div>
+                    <a href="https://wa.me/919718587814?text=Hello%2C%20Staminer%20Capsule%20ke%20baare%20me%20jankari%20chahiye" target="_blank" class="btn btn-product">
+                        <i class="fab fa-whatsapp"></i> व्हाट्सएप्प पर ऑर्डर करें
+                    </a>
+                </div>
+                
+                <div class="product-card slide-up">
+                    <div class="product-image">
+                        <i class="fas fa-prescription-bottle"></i>
+                    </div>
+                    <h3>Staminer Power Syrup</h3>
+                    <div class="product-benefits">
+                        <p><i class="fas fa-check"></i> तत्काल ऊर्जा और स्फूर्ति प्रदान करता है</p>
+                        <p><i class="fas fa-check"></i> शरीर की थकान दूर करता है</p>
+                        <p><i class="fas fa-check"></i> पाचन तंत्र को मजबूत बनाता है</p>
+                        <p><i class="fas fa-check"></i> रक्त संचार में सुधार करता है</p>
+                    </div>
+                    <a href="https://wa.me/919718587814?text=Hello%2C%20Staminer%20Power%20Syrup%20ke%20baare%20me%20jankari%20chahiye" target="_blank" class="btn btn-product">
+                        <i class="fab fa-whatsapp"></i> व्हाट्सएप्प पर ऑर्डर करें
+                    </a>
+                </div>
+                
+                <div class="product-card slide-up">
+                    <div class="product-image">
+                        <i class="fas fa-tablets"></i>
+                    </div>
+                    <h3>Staminer Immunity Booster</h3>
+                    <div class="product-benefits">
+                        <p><i class="fas fa-check"><img src="Mustang oil.jpeg" alt=""></i> प्रतिरक्षा प्रणाली को मजबूत करता है</p>
+                        <p><i class="fas fa-check"></i> शरीर को रोगों से लड़ने की क्षमता प्रदान करता है</p>
+                        <p><i class="fas fa-check"></i> एंटीऑक्सीडेंट से भरपूर</p>
+                        <p><i class="fas fa-check"></i> समग्र स्वास्थ्य और तंदुरुस्ती में सुधार</p>
+                    </div>
+                    <a href="https://wa.me/919718587814?text=Hello%2C%20Staminer%20Immunity%20Booster%20ke%20baare%20me%20jankari%20chahiye" target="_blank" class="btn btn-product">
+                        <i class="fab fa-whatsapp"></i> व्हाट्सएप्प पर ऑर्डर करें
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Staminer Section -->
+    <section class="features" id="about">
+        <div class="container">
+            <h2 class="section-title">Staminer क्यों चुनें?</h2>
+            <p class="section-subtitle">हमारी प्रतिबद्धता आपके स्वास्थ्य और खुशहाली के प्रति</p>
+            
+            <div class="features-grid">
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>प्राकृतिक अवयव</h3>
+                    <p>शतावरी, अश्वगंधा, सफेद मूसली, गोखरू जैसी शुद्ध आयुर्वेदिक जड़ी-बूटियों से निर्मित</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-ban"></i>
+                    </div>
+                    <h3>हानिकारक रसायन नहीं</h3>
+                    <p>कोई सिंथेटिक केमिकल, फिलर्स या हानिकारक प्रिजरवेटिव्स नहीं। 100% प्राकृतिक उत्पाद।</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-flag"></i>
+                    </div>
+                    <h3>भारत में निर्मित</h3>
+                    <p>भारत में अनुसंधान और विकास, भारतीय जलवायु और शरीर संरचना के अनुकूल</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>गोपनीय वितरण</h3>
+                    <p>सादे पैकेजिंग में गोपनीयता सुनिश्चित, आपके आदेश की जानकारी किसी के साथ साझा नहीं की जाती</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>व्हाट्सएप्प सपोर्ट</h3>
+                    <p>हमारे विशेषज्ञ आपकी सभी शंकाओं का समाधान करने के लिए व्हाट्सएप्प पर उपलब्ध हैं</p>
+                </div>
+                
+                <div class="feature-card fade-in">
+                    <div class="feature-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>गुणवत्ता प्रमाणित</h3>
+                    <p>GMP, FSSAI प्रमाणित उत्पादन सुविधा में उच्च गुणवत्ता मानकों पर निर्मित</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">अभी संपर्क करें</h2>
+            <p class="section-subtitle">हमारे आयुर्वेदिक विशेषज्ञ से मुफ्त परामर्श प्राप्त करें</p>
+            
+            <div class="contact-container">
+                <div class="contact-form">
+                    <form id="orderForm">
+                        <div class="form-group">
+                            <label for="name">आपका पूरा नाम *</label>
+                            <input type="text" id="name" name="name" required placeholder="अपना नाम दर्ज करें">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mobile">मोबाइल नंबर *</label>
+                            <input type="tel" id="mobile" name="mobile" required placeholder="अपना मोबाइल नंबर दर्ज करें">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="city">शहर *</label>
+                            <input type="text" id="city" name="city" required placeholder="अपना शहर दर्ज करें">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="product">उत्पाद चुनें *</label>
+                            <select id="product" name="product" required>
+                                <option value="" disabled selected>उत्पाद चुनें</option>
+                                <option value="Staminer Capsule">Staminer Capsule</option>
+                                <option value="Staminer Power Syrup">Staminer Power Syrup</option>
+                                <option value="Staminer Immunity Booster">Staminer Immunity Booster</option>
+                                <option value="Not Sure">निश्चित नहीं, विशेषज्ञ से बात करना चाहते हैं</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">मुफ्त परामर्श प्राप्त करें</button>
+                    </form>
+                    
+                    <div id="successMessage" class="success-message">
+                        <i class="fas fa-check-circle"></i>
+                        <h3>धन्यवाद! आपकी जानकारी प्राप्त हो गई है।</h3>
+                        <p>हमारा विशेषज्ञ आपसे 24 घंटे के अंदर संपर्क करेगा।</p>
+                        <p>व्हाट्सएप्प पर तुरंत बात करने के लिए नीचे दिए गए बटन पर क्लिक करें।</p>
+                        <a href="https://wa.me/919718587814?text=Hello%2C%20mujhe%20Staminer%20product%20ke%20baare%20me%20jankari%20chahiye" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-whatsapp"></i> व्हाट्सएप्प पर बात करें
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>हमसे संपर्क करने के अन्य तरीके</h3>
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>व्हाट्सएप्प पर बात करें</h4>
+                            <p>+91 97185 87814</p>
+                            <p>सुबह 9:00 से शाम 8:00 तक</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>ईमेल करें</h4>
+                            <p> details@gmail.com</p>
+                            <p>24 घंटे के अंदर जवाब</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-method">
+                        <div class="contact-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>वितरण नीति</h4>
+                            <p>पूरे भारत में होम डिलीवरी</p>
+                            <p>गोपनीय पैकेजिंग</p>
+                            <p>3-7 कार्यदिवसों में डिलीवरी</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="#" class="logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <span class="logo-text">Staminer</span>
+                    </a>
+                    <p>प्राचीन आयुर्वेदिक ज्ञान और आधुनिक विज्ञान का संगम, जो पुरुषों के समग्र स्वास्थ्य और तंदुरुस्ती के लिए समर्पित है।</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>त्वरित लिंक</h3>
+                    <ul>
+                        <li><a href="#home">होम</a></li>
+                        <li><a href="#products">उत्पाद</a></li>
+                        <li><a href="#benefits">लाभ</a></li>
+                        <li><a href="#about">हमारे बारे में</a></li>
+                        <li><a href="#contact">संपर्क करें</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-disclaimer">
+                    <h3>अस्वीकरण</h3>
+                    <p>यह आयुर्वेदिक उत्पाद है। परिणाम व्यक्ति-व्यक्ति पर निर्भर करते हैं। किसी भी गंभीर स्वास्थ्य समस्या के लिए चिकित्सक से परामर्श लें।</p>
+                    <p>उत्पाद पूर्णतः आयुर्वेदिक सिद्धांतों पर आधारित है और कोई चिकित्सकीय दावा नहीं करता।</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Staminer. सर्वाधिकार सुरक्षित।</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919718587814?text=Hello%2C%20mujhe%20Staminer%20product%20ke%20baare%20me%20jankari%20chahiye" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js">
+        // DOM Elements
+const header = document.getElementById('header');
+const hamburger = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-menu');
+const orderForm = document.getElementById('orderForm');
+const successMessage = document.getElementById('successMessage');
+const currentYearSpan = document.getElementById('currentYear');
+
+// Sticky Header
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+});
+
+// Mobile Menu Toggle
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Close mobile menu when clicking on a link
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
+// Form Submission
+if (orderForm) {
+    orderForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form values
+        const name = document.getElementById('name').value;
+        const mobile = document.getElementById('mobile').value;
+        const city = document.getElementById('city').value;
+        const product = document.getElementById('product').value;
+        
+        // In a real application, you would send this data to a server
+        // For this demo, we'll just show the success message
+        console.log('Order details:', { name, mobile, city, product });
+        
+        // Hide form and show success message
+        orderForm.style.display = 'none';
+        successMessage.style.display = 'block';
+        
+        // Scroll to success message
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // Reset form (optional, since it's hidden)
+        orderForm.reset();
+    });
+}
+
+// Set current year in footer
+if (currentYearSpan) {
+    currentYearSpan.textContent = new Date().getFullYear();
+}
+
+// Scroll Animations
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+        }
+    });
+}, observerOptions);
+
+// Observe elements for scroll animations
+document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+    observer.observe(el);
+});
+
+// Initialize animations on page load
+window.addEventListener('DOMContentLoaded', () => {
+    // Add active class to elements in view on page load
+    document.querySelectorAll('.fade-in, .slide-up').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        const isVisible = (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+        
+        if (isVisible) {
+            el.classList.add('active');
+        }
+    });
+});
+
+// WhatsApp message prefill for direct contact buttons
+function setupWhatsAppButtons() {
+    const whatsappButtons = document.querySelectorAll('a[href*="whatsapp"]');
+    
+    whatsappButtons.forEach(button => {
+        // Ensure all WhatsApp buttons have the correct message
+        const originalHref = button.getAttribute('href');
+        if (originalHref && originalHref.includes('whatsapp')) {
+            // Ensure the message is properly encoded
+            const message = encodeURIComponent("Hello, mujhe Staminer product ke baare me jankari chahiye");
+            const newHref = `https://wa.me/919999999999?text=${message}`;
+            button.setAttribute('href', newHref);
+        }
+    });
+}
+
+// Initialize WhatsApp buttons
+setupWhatsAppButtons();
+
+// Smooth scroll for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        if (targetId === '#') return;
+        
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop - 80,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Product cards hover effect enhancement
+document.querySelectorAll('.product-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.02)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0) scale(1)';
+    });
+});
+
+// Education cards hover effect enhancement
+document.querySelectorAll('.education-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.boxShadow = '0 20px 40px rgba(0, 0, 0, 0.15)';
+    });
+    
+    card.addEventListener('mouseleave', function() {
+        this.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.05)';
+    });
+});
+    </script>
+</body>
+</html>
